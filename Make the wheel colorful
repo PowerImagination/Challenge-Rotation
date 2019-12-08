@@ -1,0 +1,30 @@
+noStroke();
+
+background(0, 0, 0);
+
+var r = 255;
+
+var g = 90;
+
+var b = 0;
+
+fill(r, g, b);
+
+
+for (var i = 0; i < 350 ; i+= 30){
+    
+pushMatrix();
+
+translate(200 , 200);
+
+rotate(i);
+
+rect(0, 0, 150, 15);
+
+popMatrix();
+
+fill(r,g,b);
+    r -=10 ;
+    g +=10 ;
+    b +=10 ;
+}
